@@ -3,36 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Delius+Unicase:wght@400;700&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Englebert&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
     <title>Gen's Forecast</title>
 </head>
 <body>
     <div class="weather-app">
     <header> 
-    <form>
-        <input type="search" placeholder="Enter a city..." required/>
-        <input type="submit" value="search"/>
+    <form class="search-form">
+        <input type="search" placeholder="Enter a city..." required class="search-form-input"/>
+        <input type="submit" value="search" class="search-form-button"/>
     </form>    
 </header>
     <main>
+        <div class="weather-app-data">
         <div>
-    <h1>Paris</h1>
-    <p>
+    <h1 class="weather-app-city">Paris</h1>
+    <p class="weather-app-details">
         Wednesday 18:02, clear sky
     </br>
-        Humidity: 75%, Wind: 2.57km/h
+        Humidity: <strong>75%</strong>, Wind: <strong>2.57km/h</strong> 2.57km/h
 
     </p>
     </div>
-    <div>
-        🌑 17ºC 
+    <div class="weather-app-container">
+       <div class="weather-app-icon">🌑</div> 
+       <div class="weather-app-temperature-value">17</div>
+       <div class="weather-app-temperature-units">ºC</div>
 
     </div>
+    </div>
+    </main>
     <footer>
         This project was coded with 💕 by <a href="https://github.com/thisisgenesis" target="_blank"> Genesis Parada </a> 
         Code hosted on <a href="https://github.com/thisisgenesis?tab=repositories" target="_blank"> Github</a>
