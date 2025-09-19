@@ -49,7 +49,7 @@ main {
     display: flex;
     font-size: 88px;
     font-weight: bold;
-    color: #f69bb8;
+    color: black;
     margin-left: 15px;
 }
 .weather-app-icon {
@@ -58,6 +58,37 @@ main {
     font-size: 38px;
 
 }
+.weather-forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.weather-forecast-date{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.weather-forecast-icon {
+    text-align: center;
+    font-size: 38px;
+
+}
+.weather-forecast-temperatures {
+    text-align: center;
+    font-size: 16px;
+    color: #f587aa;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.weather-forecast-temperature {
+  padding:0 10px;
+}
+
 .weather-app-temperature-units {
     font-size: 38px;
     color: #f69bb8;
